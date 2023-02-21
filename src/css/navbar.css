@@ -37,7 +37,6 @@
 .home_navbar a {
   text-decoration: none;
 }
-
 .home_navbar .hover-line a {
   color: #ffffff;
 }
@@ -48,6 +47,7 @@
   border-bottom: solid 2px #d7b686;
 }
 
+/* this for page underline hover  */
 .home_navbar .hover-line:after {
   display: block;
 
