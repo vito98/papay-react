@@ -7,7 +7,7 @@ import "../../../css/restaurant.css";
 
 export function RestaurantPage() {
   let restaurant = useRouteMatch();
-  // console.log();
+  // console.log(restaurant);
 
   return (
     <div className="restaurant_page">

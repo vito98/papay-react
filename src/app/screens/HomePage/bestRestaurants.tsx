@@ -18,7 +18,7 @@ export function BestRestaurants() {
     <div className="best_restaurant_frame">
       <img
         src={"/icons/line_group.svg"}
-        style={{ position: "absolute", left: "6%", transform: "rotate(0deg)" }}
+        style={{ position: "absolute", left: "6%" }}
       />
       <Container sx={{ paddingTop: "153px" }}>
         <Stack flexDirection={"column"} alignItems={"center"}>

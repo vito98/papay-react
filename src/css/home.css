@@ -418,7 +418,7 @@
 .homepage .article_box .article_img {
   width: 150px;
   height: 153px;
-  border-radius: 0px;
+  border-radius: 10px;
   background-size: cover;
   object-fit: contain;
   background-repeat: no-repeat;

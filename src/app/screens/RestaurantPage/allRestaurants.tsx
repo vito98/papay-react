@@ -51,6 +51,7 @@ export function AllRestaurant() {
               </form>
             </Box>
           </Box>
+
           <Stack className="all_res_box">
             <CssVarsProvider>
               {order_list.map((ele) => {

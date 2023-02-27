@@ -80,7 +80,7 @@ export function Events() {
           >
             {events_list.map((value, number) => {
               return (
-                <SwiperSlide className={"events_info_frame"}>
+                <SwiperSlide key={number} className={"events_info_frame"}>
                   <div className={"events_img"}>
                     <img src={value.img} className={"events_img"} />
                   </div>

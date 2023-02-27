@@ -15,6 +15,7 @@ export function Recommendations() {
           sx={{ mt: "45px" }}
         >
           <Box className={"category_title"}>Tavsiya qilingan maqolalar</Box>
+
           <Stack className={"article_main"} flexDirection={"row"}>
             <Stack className={"article_container"}>
               <Box className={"article_category"}>Ko'p ko'rilgan</Box>
