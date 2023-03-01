@@ -306,6 +306,7 @@
 
   display: flex;
   border: none;
+  outline: none;
   border-radius: 10px 0px 0px 10px;
   font-family: "GT Walsheim Pro";
   font-style: normal;
@@ -838,11 +839,11 @@
   margin-right: 10px;
 }
 
-.single_restaurant .css-1p7b7rs-MuiBadge-badge {
+/* .single_restaurant .css-1p7b7rs-MuiBadge-badge {
   position: absolute;
   top: 26%;
   right: 15%;
-}
+} */
 
 /* CHOSEN DISH PAGE */
 

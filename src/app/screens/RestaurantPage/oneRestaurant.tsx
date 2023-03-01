@@ -177,6 +177,7 @@ export function OneRestaurant() {
                         </Badge>
                       </Button>
                     </Box>
+
                     <Box className="dish_desc">
                       <span className="dish_title_text">Shirin qovurma</span>
                       <div className="dish_desc_text">
