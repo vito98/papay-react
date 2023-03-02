@@ -5,9 +5,9 @@ import React from "react";
 import { Scale } from "@mui/icons-material";
 
 const pausedOrders = [
-  [1, 2, 3],
-  [1, 2, 3],
-  [1, 2, 3],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
 ];
 
 export default function ProcessOrders(props: any) {
