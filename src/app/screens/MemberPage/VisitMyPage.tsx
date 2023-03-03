@@ -70,6 +70,29 @@ export function VisitMyPage(props: any) {
                   <Box className="menu_name">Followers</Box>
                   <Box className="menu_content">
                     <MemberFollowers actions_enabled={true} />
+                    <Stack
+                      sx={{ my: "40px" }}
+                      direction="row"
+                      alignItems={"center"}
+                      justifyContent="center"
+                    >
+                      <Box className="bottom_box">
+                        <Pagination
+                          count={3}
+                          page={1}
+                          renderItem={(item) => (
+                            <PaginationItem
+                              components={{
+                                previous: ArrowBackIcon,
+                                next: ArrowForwardIcon,
+                              }}
+                              {...item}
+                              color={"secondary"}
+                            />
+                          )}
+                        />
+                      </Box>
+                    </Stack>
                   </Box>
                 </TabPanel>
 
@@ -77,6 +100,29 @@ export function VisitMyPage(props: any) {
                   <Box className="menu_name">Following</Box>
                   <Box className="menu_content">
                     <MemberFollowing actions_enabled={true} />
+                    <Stack
+                      sx={{ my: "40px" }}
+                      direction="row"
+                      alignItems={"center"}
+                      justifyContent="center"
+                    >
+                      <Box className="bottom_box">
+                        <Pagination
+                          count={3}
+                          page={1}
+                          renderItem={(item) => (
+                            <PaginationItem
+                              components={{
+                                previous: ArrowBackIcon,
+                                next: ArrowForwardIcon,
+                              }}
+                              {...item}
+                              color={"secondary"}
+                            />
+                          )}
+                        />
+                      </Box>
+                    </Stack>
                   </Box>
                 </TabPanel>
 

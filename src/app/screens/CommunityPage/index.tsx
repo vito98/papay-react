@@ -61,7 +61,7 @@ export function CommunityPage(props: any) {
 
                 <Box className="article_main">
                   <TabPanel value="1">
-                    <TargetArticles targetBoArticles={[1, 2, 3, 4, 5, 6, 7]} />
+                    <TargetArticles targetBoArticles={[1, 2, 3]} />
                   </TabPanel>
                   <TabPanel value="2">
                     <TargetArticles targetBoArticles={[1, 2, 3, 4]} />

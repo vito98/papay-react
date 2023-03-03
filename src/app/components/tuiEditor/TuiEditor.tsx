@@ -30,6 +30,7 @@ export const TuiEditor = (props: any) => {
           >
             Category
           </Typography>
+
           <FormControl sx={{ width: "100%", background: "white" }}>
             <Select
               value={"celebrity"}
@@ -45,6 +46,7 @@ export const TuiEditor = (props: any) => {
             </Select>
           </FormControl>
         </Box>
+
         <Box className="form_row" style={{ width: "300px" }}>
           <Typography
             style={{ color: "rgb(225 225 233)", margin: "10px" }}
@@ -61,13 +63,13 @@ export const TuiEditor = (props: any) => {
         </Box>
       </Stack>
 
+      {/*@ts-ignore*/}
       <Editor
-        // @ts-ignore
         ref={editorRef}
         placeholder="Type here"
         previewStyle="vertical"
         height="640px"
-        initialEditType="wysiwyg"
+        initialEditType="WYSIWYG"
         toolbarItems={[
           ["heading", "bold", "italic", "strike"],
           ["image", "table", "link"],
@@ -82,6 +84,7 @@ export const TuiEditor = (props: any) => {
           load: function (param: any) {},
         }}
       />
+
       <Stack direction={"row"} justifyContent="center">
         <Button
           variant="contained"
