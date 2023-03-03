@@ -19,7 +19,7 @@ export function CommunityPage(props: any) {
   const [value, setValue] = React.useState("1");
 
   /* HANDLES */
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (event: any, newValue: string) => {
     setValue(newValue);
   };
 
@@ -61,7 +61,7 @@ export function CommunityPage(props: any) {
 
                 <Box className="article_main">
                   <TabPanel value="1">
-                    <TargetArticles targetBoArticles={[1, 2, 3]} />
+                    <TargetArticles targetBoArticles={[1, 2, 3, 4, 5, 6, 7]} />
                   </TabPanel>
                   <TabPanel value="2">
                     <TargetArticles targetBoArticles={[1, 2, 3, 4]} />

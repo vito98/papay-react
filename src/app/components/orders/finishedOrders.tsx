@@ -3,7 +3,7 @@ import TabPanel from "@mui/lab/TabPanel";
 import React from "react";
 import { Scale } from "@mui/icons-material";
 
-const pausedOrders = [
+const finishedOrders = [
   [1, 2, 3, 4, 5],
   [1, 2, 3],
   [1, 2, 3],
@@ -13,14 +13,14 @@ export default function FinishedOrders(props: any) {
   return (
     <TabPanel value={"3"}>
       <Stack>
-        {pausedOrders?.map((order, index) => {
+        {finishedOrders?.map((order, index) => {
           return (
-            <Box className="order_main_box">
+            <Box key={index} className="order_main_box">
               <Box className="order_box_scroll">
-                {order.map((item) => {
+                {order.map((item, index) => {
                   const image_path = `/others/sandvich.jpeg`;
                   return (
-                    <Box className="ordersName_price">
+                    <Box key={index} className="ordersName_price">
                       <Box
                         flexDirection={"row"}
                         alignItems={"center"}

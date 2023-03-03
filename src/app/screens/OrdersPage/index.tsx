@@ -75,6 +75,7 @@ export function OrdersPage() {
               <span className="order_user_name">Kadirov Abror</span>
               <span className="order_user_prof">Foydalanuvchi</span>
             </Box>
+
             <Box
               style={{ border: "1px solid #A1A1A1" }}
               width={"100%"}

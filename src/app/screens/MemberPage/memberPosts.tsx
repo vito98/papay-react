@@ -1,59 +1,48 @@
-import { Box, Link, Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import moment from "moment";
 import CheckBox from "@mui/material/Checkbox";
 import { Favorite, FavoriteBorder } from "@mui/icons-material";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 
-export function TargetArticles(props: any) {
-  const label = { inputProps: { "aria-label": "Checbox demo" } };
+export function MemberPosts() {
   return (
-    <Stack>
-      {props.targetBoArticles?.map((article: any, index: string) => {
-        const art_image_url = `/community/default_articles.svg`;
+    <Box className="post_content">
+      {["1", "2", "3"].map((article) => {
         return (
-          <Link
-            key={index}
-            className="all_article_box"
-            sx={{ textDecoration: "none" }}
-            href={``}
-          >
+          <Stack className="all_article_box" sx={{ cursor: "pointer" }}>
             <Box
               className="all_article_img"
-              sx={{ backgroundImage: `url(${art_image_url})` }}
+              sx={{ backgroundImage: `url("/auth/default_user.svg")` }}
             ></Box>
-
-            <Box flexDirection={"row"} sx={{ display: "flex", width: "100%" }}>
-              <Stack
-                flexDirection={"column"}
-                sx={{ display: "flex" }}
-                className="all_article_container"
-              >
-                <Box alignItems={"center"} display={"flex"}>
+            <Box className="all_article_container">
+              <Box style={{ width: "50%" }}>
+                <Box alignItems={"center"} display="flex">
                   <img
                     src="/auth/default_user.svg"
                     width={"35px"}
                     style={{ borderRadius: "50%", backgroundSize: "cover" }}
                   />
-                  <span className="all_article_author_user">Kadirov Abror</span>
+                  <span className="all_article_author_user">
+                    Martin Robertson
+                  </span>
                 </Box>
 
                 <Box
                   display={"flex"}
                   flexDirection={"column"}
-                  sx={{ mt: "15px" }}
+                  sx={{ mt: "10px" }}
                 >
-                  <span className="all_article_title">evaluation</span>
-                  <p className="all_article_desc">
-                    Texas De Brazil zo'r restaurant
-                  </p>
+                  <span className="all_article_title">
+                    Restaurantlarga baho
+                  </span>
+                  <p className="all_article_desc">Burak ajoyib restaurant</p>
                 </Box>
-              </Stack>
+              </Box>
 
-              <Stack
+              <Box
                 sx={{ display: "flex" }}
                 flexDirection={"column"}
                 justifyContent={"flex-end"}
-                // alignItems={"flex-end"}
               >
                 <Box
                   sx={{ display: "flex" }}
@@ -73,7 +62,6 @@ export function TargetArticles(props: any) {
                       }}
                     >
                       <CheckBox
-                        {...label}
                         icon={<FavoriteBorder style={{ color: "white" }} />}
                         checkedIcon={<Favorite style={{ color: "red" }} />}
                         // checked={false}
@@ -90,11 +78,11 @@ export function TargetArticles(props: any) {
                     </div>
                   </div>
                 </Box>
-              </Stack>
+              </Box>
             </Box>
-          </Link>
+          </Stack>
         );
       })}
-    </Stack>
+    </Box>
   );
 }

@@ -4,7 +4,7 @@ import moment from "moment";
 import React from "react";
 import { Scale } from "@mui/icons-material";
 
-const pausedOrders = [
+const processOrders = [
   [1, 2, 3, 4, 5],
   [1, 2, 3, 4, 5],
   [1, 2, 3, 4, 5],
@@ -14,14 +14,14 @@ export default function ProcessOrders(props: any) {
   return (
     <TabPanel value={"2"}>
       <Stack>
-        {pausedOrders?.map((order, index) => {
+        {processOrders?.map((order, index) => {
           return (
-            <Box className="order_main_box">
+            <Box key={index} className="order_main_box">
               <Box className="order_box_scroll">
-                {order.map((item) => {
+                {order.map((item, index) => {
                   const image_path = `/others/sandvich.jpeg`;
                   return (
-                    <Box className="ordersName_price">
+                    <Box key={index} className="ordersName_price">
                       <Box
                         flexDirection={"row"}
                         alignItems={"center"}

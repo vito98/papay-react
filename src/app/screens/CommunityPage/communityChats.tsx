@@ -9,6 +9,7 @@ export function CommunityChats() {
   return (
     <Stack className="chat_frame">
       <Box className={"chat_top"}>Jonli Muloqot</Box>
+
       <Box className={"chat_content"}>
         <Stack className="chat_main">
           <Box
@@ -37,6 +38,7 @@ export function CommunityChats() {
           </Box>
         </Stack>
       </Box>
+
       <Box className="chat_bott">
         <input
           type="text"
